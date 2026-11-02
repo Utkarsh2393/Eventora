@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover experiences worth remembering. Explore and register for curated events with Eventora."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Eventora — Discover What's Happening</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot"></span>
+      Your next great experience starts here
+      <a href="#events">Explore events <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Eventora home">
+          <span class="brand-mark">e<span>.</span></span>
+          <span>eventora</span>
+        </a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#events">Explore events</a>
+          <a class="nav-link" href="#about">About us</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Switch color theme"
+            title="Switch color theme"
+          >
+            ☼
+          </button>
+          <a class="button button-small button-primary nav-cta" href="#events"
+            >Find an event <span>↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> THE PLACE TO BE
+            </div>
+            <h1>
+              Make room for<br /><span>the moments</span><br />that matter.
+            </h1>
+            <p class="hero-description">
+              From big ideas to unforgettable nights, find the people, places
+              and experiences that make life a little more interesting.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#events"
+                >Discover events <span>↗</span></a
+              >
+              <a class="text-link" href="#about"
+                ><span class="play-icon">▶</span> Get to know us</a
+              >
+            </div>
+            <div class="hero-proof">
+              <div class="avatar-stack">
+                <span class="avatar av1">A</span
+                ><span class="avatar av2">R</span
+                ><span class="avatar av3">M</span
+                ><span class="avatar av4">S</span>
+              </div>
+              <div>
+                <strong>2,400+</strong
+                ><small>people finding their next thing</small>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-main">
+              <img
+                src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1100&q=85"
+                alt="Crowd enjoying a live music event"
+              />
+              <div class="image-gradient"></div>
+              <div class="hero-image-caption">
+                <span class="live-pill"><i></i> HAPPENING SOON</span
+                ><strong>Good times.<br />Great company.</strong>
+              </div>
+            </div>
+            <div class="floating-card floating-date">
+              <span class="floating-icon">✦</span>
+              <div><strong>12+</strong><small>events this month</small></div>
+            </div>
+            <div class="floating-card floating-note">
+              <span class="note-icon">↗</span>
+              <div>
+                <strong>Find your people</strong
+                ><small>Experiences for every interest</small>
+              </div>
+            </div>
+            <div class="hero-sparkle">✳</div>
+          </div>
+        </div>
+        <div class="hero-bottom container">
+          <span>SCROLL TO EXPLORE</span><span class="scroll-line"></span
+          ><span>01 / 04</span>
+        </div>
+      </section>
+
+      <section class="stats-strip">
+        <div class="container stats-grid">
+          <div>
+            <strong>50<span>+</span></strong
+            ><small>Curated experiences</small>
+          </div>
+          <div>
+            <strong>12<span>k</span></strong
+            ><small>Community members</small>
+          </div>
+          <div><strong>18</strong><small>Creative communities</small></div>
+          <div class="stats-note">
+            Less scrolling.<br /><em>More living.</em>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section section-pad" id="events">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">
+                <span class="eyebrow-line"></span> FIND YOUR NEXT EXPERIENCE
+              </div>
+              <h2>Something for<br /><span>every kind of curious.</span></h2>
+            </div>
+            <p>
+              Good things happen when people come together. Browse what's on,
+              pick your vibe and we'll see you there.
+            </p>
+          </div>
+          <div class="events-toolbar">
+            <div
+              class="category-list"
+              id="categoryFilters"
+              aria-label="Filter events by category"
+            >
+              <button class="category-chip selected" data-category="All">
+                All events <span>08</span>
+              </button>
+              <button class="category-chip" data-category="Music">Music</button>
+              <button class="category-chip" data-category="Technology">
+                Technology
+              </button>
+              <button class="category-chip" data-category="Arts">
+                Arts & culture
+              </button>
+              <button class="category-chip" data-category="Business">
+                Business
+              </button>
+              <button class="category-chip" data-category="Lifestyle">
+                Lifestyle
+              </button>
+            </div>
+            <label class="search-box"
+              ><span>⌕</span
+              ><input
+                id="eventSearch"
+                type="search"
+                placeholder="Search events..."
+                aria-label="Search events"
+              /><kbd>⌘ K</kbd></label
+            >
+          </div>
+          <div class="featured-event" id="featuredEvent">
+            <div class="featured-photo">
+              <img
+                src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=85"
+                alt="Live concert stage with colorful lights"
+              />
+            </div>
+            <div class="featured-content">
+              <div class="featured-top">
+                <span class="featured-label">✦ EDITOR'S PICK</span
+                ><span class="date-tag">NOV 21, 2026</span>
+              </div>
+              <p class="event-category">MUSIC · LIVE EXPERIENCE</p>
+              <h3>Afterglow<br />Music Festival</h3>
+              <p class="featured-desc">
+                One night. Three stages. A whole lot of unforgettable energy.
+                Come for the music, stay for the memories.
+              </p>
+              <div class="event-meta">
+                <span>⌖ Bhubaneswar, Odisha</span><span>◷ 5:00 PM onwards</span>
+              </div>
+              <button class="button button-light" data-open-event="afterglow">
+                Explore event <span>↗</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="events-subhead">
+            <div>
+              <span class="eyebrow-line"></span
+              ><span class="eyebrow">THE LINEUP</span>
+              <h3>Coming up next</h3>
+            </div>
+            <span class="results-count" id="resultsCount"
+              >Showing 7 events</span
+            >
+          </div>
+          <div class="event-grid" id="eventGrid" aria-live="polite"></div>
+          <div class="empty-state hidden" id="emptyState">
+            <span>◌</span>
+            <h3>No events found</h3>
+            <p>Try another search or category.</p>
+            <button class="text-link" id="clearFilters">Clear filters ↗</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section section-pad" id="about">
+        <div class="container experience-grid">
+          <div class="experience-image">
+            <img
+              src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85"
+              alt="People gathered at a beautifully arranged event"
+            />
+            <div class="experience-stamp">
+              <span>GOOD<br />VIBES<br />ONLY</span><b>✳</b>
+            </div>
+          </div>
+          <div class="experience-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> MORE THAN JUST AN EVENT LIST
+            </div>
+            <h2>Life's better<br />when it's <span>shared.</span></h2>
+            <p>
+              Eventora brings interesting people and experiences together.
+              Whether you're here to learn something new, meet your next
+              collaborator or simply have a brilliant time, there's a place for
+              you.
+            </p>
+            <div class="value-list">
+              <div>
+                <span class="value-icon">✦</span>
+                <div>
+                  <strong>Handpicked experiences</strong
+                  ><small>Quality events worth stepping out for.</small>
+                </div>
+              </div>
+              <div>
+                <span class="value-icon">◎</span>
+                <div>
+                  <strong>Your kind of community</strong
+                  ><small>Meet people who are into what you're into.</small>
+                </div>
+              </div>
+              <div>
+                <span class="value-icon">↗</span>
+                <div>
+                  <strong>Easy from start to finish</strong
+                  ><small>Discover, register and you're on the list.</small>
+                </div>
+              </div>
+            </div>
+            <a href="#events" class="button button-primary"
+              >Find your next experience <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <div class="container countdown-inner">
+          <div>
+            <span class="eyebrow eyebrow-light"
+              ><span class="eyebrow-line"></span> SAVE THE DATE</span
+            >
+            <h2>
+              The next big thing<br />is <span>closer than you think.</span>
+            </h2>
+            <p>
+              Our featured experience is just around the corner. Don't miss out.
+            </p>
+          </div>
+          <div
+            class="countdown"
+            id="countdown"
+            aria-label="Countdown to Afterglow Music Festival"
+          >
+            <div><strong id="days">00</strong><small>DAYS</small></div>
+            <i>:</i>
+            <div><strong id="hours">00</strong><small>HOURS</small></div>
+            <i>:</i>
+            <div><strong id="minutes">00</strong><small>MINS</small></div>
+            <i>:</i>
+            <div><strong id="seconds">00</strong><small>SECS</small></div>
+          </div>
+          <button class="button button-light" data-open-event="afterglow">
+            I'm interested <span>↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="newsletter-section section-pad" id="contact">
+        <div class="container newsletter-card">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> THE GOOD STUFF, IN YOUR INBOX
+            </div>
+            <h2>Stay in the <span>know.</span></h2>
+            <p>
+              Get the latest events, early-bird drops and community news. No
+              noise, just good plans.
+            </p>
+          </div>
+          <form id="newsletterForm" class="newsletter-form" novalidate>
+            <label for="newsletterEmail">Your email address</label>
+            <div class="newsletter-input">
+              <input
+                id="newsletterEmail"
+                type="email"
+                placeholder="you@example.com"
+                required
+              /><button type="submit" aria-label="Subscribe">↗</button>
+            </div>
+            <small id="newsletterMessage"
+              >By subscribing, you agree to receive Eventora updates.</small
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-col">
+          <a class="brand footer-brand" href="#"
+            ><span class="brand-mark">e<span>.</span></span
+            ><span>eventora</span></a
+          >
+          <p>Find your people.<br />Make some memories.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">ig</a
+            ><a href="#" aria-label="LinkedIn">in</a
+            ><a href="#" aria-label="X">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#events">All events</a
+          ><a href="#events" data-footer-category="Music">Music</a
+          ><a href="#events" data-footer-category="Technology">Technology</a
+          ><a href="#events" data-footer-category="Arts">Arts & culture</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About Eventora</a><a href="#contact">Contact us</a
+          ><a href="#about">Our community</a
+          ><a href="#contact">Partner with us</a>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Say hello</h4>
+          <a href="mailto:hello@eventora.example">hello@eventora.example</a>
+          <p>Bhubaneswar, Odisha, India</p>
+          <span class="footer-note">Made for moments that matter <b>✳</b></span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> Eventora. All good things reserved.</span
+        >
+        <div>
+          <a href="#">Privacy</a><a href="#">Terms</a
+          ><a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="event-dialog" id="eventDialog" aria-labelledby="dialogTitle">
+      <button
+        class="dialog-close"
+        id="closeDialog"
+        aria-label="Close event details"
+      >
+        ×
+      </button>
+      <div id="dialogContent"></div>
+    </dialog>
+
+    <dialog
+      class="register-dialog"
+      id="registerDialog"
+      aria-labelledby="registerTitle"
+    >
+      <button
+        class="dialog-close"
+        id="closeRegister"
+        aria-label="Close registration form"
+      >
+        ×
+      </button>
+      <div class="register-heading">
+        <span class="eyebrow"
+          ><span class="eyebrow-line"></span> SAVE YOUR SPOT</span
+        >
+        <h2 id="registerTitle">
+          You're on your<br /><span>way to something good.</span>
+        </h2>
+        <p>Fill in your details to register for this experience.</p>
+      </div>
+      <form id="registrationForm" novalidate>
+        <input type="hidden" id="selectedEvent" />
+        <div class="form-row">
+          <label for="fullName">Full name *</label
+          ><input
+            id="fullName"
+            name="fullName"
+            type="text"
+            placeholder="Your full name"
+            required
+            minlength="2"
+          /><small class="field-error"></small>
+        </div>
+        <div class="form-row">
+          <label for="email">Email address *</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          /><small class="field-error"></small>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number *</label
+          ><input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="10-digit mobile number"
+            required
+            inputmode="numeric"
+            maxlength="15"
+          /><small class="field-error"></small>
+        </div>
+        <div class="form-row">
+          <label for="eventSelect">Selected event *</label
+          ><select id="eventSelect" name="event" required></select
+          ><small class="field-error"></small>
+        </div>
+        <label class="consent-check"
+          ><input type="checkbox" id="consent" required /><span
+            >I agree to be contacted with event-related updates.</span
+          ></label
+        >
+        <small class="field-error consent-error"></small>
+        <button class="button button-primary register-submit" type="submit">
+          Complete registration <span>↗</span>
+        </button>
+        <p class="form-privacy">
+          Your details are saved locally in this demo and are not sent to a
+          server.
+        </p>
+      </form>
+      <div class="success-panel hidden" id="successPanel">
+        <div class="success-icon">✓</div>
+        <h3>You're on the list!</h3>
+        <p id="successMessage">Your registration has been saved.</p>
+        <button class="button button-primary" id="doneButton">
+          Lovely, thanks! <span>↗</span>
+        </button>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
